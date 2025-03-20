@@ -11,7 +11,7 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 
 const HomePage = () => {
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-  const [code, setCode] = useState(`# Sample code \n def sum():  \n  return a + b \n`);
+  const [code, setCode] = useState(`// Sample code \n const sum = () => {  \n  console.log(arguments) \n  return a + b \n }`);
   const [review, setReview] = useState("");
   const [loading, setLoading] = useState(false);
   const [fileName, setFileName] = useState("");
